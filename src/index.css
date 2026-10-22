@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: 'Instrument Serif', serif;
+    --font-sans: 'Inter', sans-serif;
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    --background: #e7e7e7;
+    --foreground: #151619;
+    --card: #e7e7e7;
+    --card-foreground: #151619;
+    --popover: #e7e7e7;
+    --popover-foreground: #151619;
+    --primary: #151619;
+    --primary-foreground: #ffffff;
+    --secondary: #dcdcdc;
+    --secondary-foreground: #151619;
+    --muted: #dcdcdc;
+    --muted-foreground: #666870;
+    --accent: hsl(22 35% 56%);
+    --accent-foreground: #ffffff;
+    --destructive: hsl(0 84.2% 60.2%);
+    --border: hsl(220 10% 84%);
+    --input: hsl(220 10% 84%);
+    --ring: hsl(220 18% 10%);
+    --radius: 0.625rem;
+}
+
+.dark {
+    --background: hsl(220 18% 10%);
+    --foreground: hsl(210 20% 96%);
+    --card: hsl(220 18% 10%);
+    --card-foreground: hsl(210 20% 96%);
+    --popover: hsl(220 18% 10%);
+    --popover-foreground: hsl(210 20% 96%);
+    --primary: hsl(0 0% 100%);
+    --primary-foreground: hsl(220 18% 10%);
+    --secondary: hsl(220 12% 92%);
+    --secondary-foreground: hsl(220 18% 10%);
+    --muted: hsl(220 12% 92%);
+    --muted-foreground: hsl(220 8% 42%);
+    --accent: hsl(22 35% 56%);
+    --accent-foreground: hsl(0 0% 100%);
+    --destructive: hsl(0 62.8% 30.6%);
+    --border: hsl(220 10% 84%);
+    --input: hsl(220 10% 84%);
+    --ring: hsl(210 20% 96%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
