@@ -2,9 +2,9 @@
 
 A premium speaker concept website exploring sound as architecture. Built as a frontend portfolio project to explore product presentation, motion and visual storytelling.
 
-[![Watch the demo](demo/preview.jpg)](https://github.com/Kredickoa/auralith-scroll/raw/refs/heads/main/demo/demo.mp4)
+## Demo
 
-[Watch the demo video](https://github.com/Kredickoa/auralith-scroll/raw/refs/heads/main/demo/demo.mp4)
+https://github.com/user-attachments/assets/5e7ba4a0-1de7-449d-bc6c-98619c6d8cc5
 
 ## Highlights
 
